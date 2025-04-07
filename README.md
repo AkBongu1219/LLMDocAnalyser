@@ -67,7 +67,7 @@ streamlit run app.py
 - "Find all records where column_name is greater than 100"
 
 ## Project Structure
-
+```bash
 LLM_EXCEL/
 ├── __pycache__/
 ├── modules/
@@ -80,6 +80,7 @@ LLM_EXCEL/
 ├── app.py
 ├── main.py
 ├── requirements.txt
+```
 
 
 
