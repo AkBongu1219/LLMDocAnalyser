@@ -72,16 +72,13 @@ LLM_EXCEL/
 ├── __pycache__/
 ├── modules/
 │   ├── __pycache__/
-│   ├── csv_sql_mapper.py
-│   ├── schema_inferrer.py
-│   ├── validator.py
-│   └── chat_sheet.py
-├── .env
-├── app.py
-├── main.py
-├── requirements.txt
+│   ├── csv_sql_mapper.py # Maps CSV files to SQL database tables.
+│   ├── schema_inferrer.py # Infers the database schema from CSV data.
+│   ├── validator.py # Validates schemas and SQL queries.
+│   └── chat_sheet.py # Converts natural language queries into SQL and result templates.
+├── .env  # Environment configuration file (e.g., API keys).
+├── app.py # Streamlit app providing a web interface.
+├── main.py # Terminal/CLI entry point for the ChatSheet application.
+├── requirements.txt # List of required Python packages.
 ```
-
-
-
 
