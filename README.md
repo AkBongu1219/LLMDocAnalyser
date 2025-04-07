@@ -19,7 +19,7 @@ LLM_Excel is a Streamlit-based application that allows users to interact with CS
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/AkBongu1219/LLMDocAnalyser.git
 cd LLM_Excel
 ```
 
