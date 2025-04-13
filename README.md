@@ -66,6 +66,51 @@ streamlit run app.py
 - "How many rows are there in table_name?"
 - "Find all records where column_name is greater than 100"
 
+## Installing via pip (Local Development)
+
+To install the project as a local Python package with CLI support, follow these steps:
+
+### 1. Build the Package
+
+From the project root (where `setup.py` is located), run:
+
+```bash
+python -m build
+```
+
+This will create a `.whl` and `.tar.gz` file under the `dist/` directory.
+
+### 2. Install the Package
+
+Install the built wheel using pip:
+
+```bash
+pip install dist/llm_excel-0.1.0-py3-none-any.whl
+```
+
+> Tip: You can also use `pip install dist/*.whl` to automatically pick the latest wheel file.
+
+### 3. Run the CLI
+
+Once installed, you can invoke the application via:
+
+```bash
+app-main
+```
+
+This will execute the `main()` function from `main.py`.
+
+### 🔧 Development Note
+
+If your application uses submodules (e.g., `modules/`), make sure it includes an `__init__.py` file and is listed in `setup.py` using `find_packages()`.
+
+> For best results, use a virtual environment:
+> ```bash
+> conda create -n llm_excel python=3.11
+> conda activate llm_excel
+> pip install dist/*.whl
+> ```
+
 ## Project Structure
 ```bash
 LLM_EXCEL/
@@ -83,5 +128,7 @@ LLM_EXCEL/
 ├── app.py # Streamlit app providing a web interface.
 ├── main.py # Terminal/CLI entry point for the ChatSheet application.
 ├── requirements.txt # List of required Python packages.
+├── setup.py # Allows for local pip installation.
+
 ```
 
