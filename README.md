@@ -69,13 +69,16 @@ streamlit run app.py
 ## Project Structure
 ```bash
 LLM_EXCEL/
-├── __pycache__/
 ├── modules/
-│   ├── __pycache__/
 │   ├── csv_sql_mapper.py # Maps CSV files to SQL database tables.
 │   ├── schema_inferrer.py # Infers the database schema from CSV data.
 │   ├── validator.py # Validates schemas and SQL queries.
 │   └── chat_sheet.py # Converts natural language queries into SQL and result templates.
+├── tests/
+│   ├── test_csv_sql_mapper.py # Tests csv_sql_mapper.py
+│   ├── test_schema_inferrer.py # Tests schema_inferrer.py
+│   ├── test_validator.py # Tests validator.py
+│   └── tets_chat_sheet.py # Tests chat_sheet.py
 ├── .env  # Environment configuration file (e.g., API keys).
 ├── app.py # Streamlit app providing a web interface.
 ├── main.py # Terminal/CLI entry point for the ChatSheet application.
