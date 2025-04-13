@@ -1,4 +1,4 @@
-# LLMDocAnalyser: Natural Language SQL Interface
+# LLM_SQLQueries: Natural Language SQL Interface
 
 LLM_Excel is a Streamlit-based application that allows users to interact with CSV data using natural language queries. The application converts natural language into SQL queries and provides both structured and natural language responses.
 
