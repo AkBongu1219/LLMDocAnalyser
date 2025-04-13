@@ -78,7 +78,7 @@ LLM_EXCEL/
 │   ├── test_csv_sql_mapper.py # Tests csv_sql_mapper.py
 │   ├── test_schema_inferrer.py # Tests schema_inferrer.py
 │   ├── test_validator.py # Tests validator.py
-│   └── tets_chat_sheet.py # Tests chat_sheet.py
+│   └── test_chat_sheet.py # Tests chat_sheet.py
 ├── .env  # Environment configuration file (e.g., API keys).
 ├── app.py # Streamlit app providing a web interface.
 ├── main.py # Terminal/CLI entry point for the ChatSheet application.
